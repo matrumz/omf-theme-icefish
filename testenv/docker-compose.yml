@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  omf-shell:
+    build: .
+    volumes:
+      - ../functions:/root/.oh-my-fish/themes/icefish/functions
+    working_dir: /root
+    command: |
+      env fish -c "
+        omf theme icefish
+        ; sleep infinity
+      "
