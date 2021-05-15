@@ -1,3 +1,4 @@
 function fish_prompt
-  # Customize fish prompt
+  echo "info left"
+  echo "> "
 end
